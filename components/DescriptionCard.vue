@@ -11,7 +11,7 @@
          {{item.description}}
        </div>
      </div>
-     <BrandButton text="SHOP NOW"> </BrandButton>
+     <BrandButton text="SHOP NOW" :variant="secondary"> </BrandButton>
      <div class="dots">
        <span class="full-dot"></span>
        <span class="empty-dot"></span>
@@ -26,11 +26,9 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
     },
     description: {
       type: String,
-      required: true,
     }
   },
   data() {
@@ -39,6 +37,7 @@ export default {
         title: 'The new 2021 collection',
         description: 'Known as "the miracle plant", Aloe Vera helps to nourish, moisturize and keep the hair looking smooth. Let your hair be flexible and fresh.'
       },
+      extraDescription: false,
     }
   }
 }

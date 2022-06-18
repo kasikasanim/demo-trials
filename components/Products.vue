@@ -40,6 +40,10 @@ export default {
 </script>
 
 <style scoped>
+
+.heading-wrapper {
+  margin: 1.5rem;
+}
 .product-wrapper {
   display: flex;
   flex-direction: column;
@@ -51,4 +55,5 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+
 </style>

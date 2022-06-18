@@ -1,6 +1,6 @@
 <template>
   <div class="button-container">
-    <button class="button">
+    <button class="button" >
       {{ text }}
     </button>
   </div>
@@ -13,8 +13,10 @@ export default {
     text: {
       type: String,
       required: true
-    }
-  }
+    },
+
+  },
+
 }
 </script>
 
@@ -24,10 +26,13 @@ export default {
   background: #FF27AD;
   border-radius: 4px;
   color: white;
-  font-weight: 700;
   width: 100%;
   border: none;
   margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
 
 }
 
@@ -36,6 +41,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 1rem;
 }
 </style>

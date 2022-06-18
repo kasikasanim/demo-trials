@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div class="product-card-container">
    <div class="product-card-wrapper" v-for="item in items">
      <div class="img-wrapper">
        <img :src=item.thumbnail :alt=item.description class="image-container">
@@ -44,16 +44,28 @@ export default {
 </script>
 
 <style scoped>
+
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 .product-card-wrapper {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: rgba(236, 236, 236, 0.16);
+  max-width: 15rem;
+  justify-content: flex-start;
 }
 
 .image-container {
-  max-width: 100%
+  max-width: 100%;
+  max-height: 8rem;
+}
+
+.img-wrapper {
+  max-height: 50%;
 }
 
 .price {
@@ -67,7 +79,6 @@ export default {
 .description {
   margin: 16px 0;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
@@ -87,7 +98,9 @@ export default {
   padding: 0.25rem;
   color: white;
   text-align: center;
-  font-weight: 600;
   border: none;
+  font-weight: 700;
 }
+
+
 </style>

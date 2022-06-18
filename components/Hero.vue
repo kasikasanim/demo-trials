@@ -38,6 +38,11 @@ export default {
 
 <style scoped>
  /** 500pxten sonra media query ile flexi rowa çevir**/
+ /** 2li kartlarda wrap yukarı dönünce margini bu şekilde koy https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type **/
+
+ /deep/ .button {
+   min-height: 32px;
+ }
 .hero {
   padding: 12px;
   background: linear-gradient(163.21deg, #F2F0FF 9.01%, rgba(251, 251, 255, 0.77) 26.47%, rgba(255, 255, 255, 0.72) 52.19%, #F2F0FF 67.81%), #F2F0FF;
